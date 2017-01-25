@@ -1,0 +1,462 @@
+<puzzles>
+<puzzle width="4" height="5">
+<pento id="F2a"/>
+<pento id="L1d"/>
+<pento id="Ud"/>
+<pento id="Va"/>
+</puzzle>
+<puzzle width="4" height="5">
+<pento id="F2a"/>
+<pento id="P2b"/>
+<pento id="Ud"/>
+<pento id="Y1c"/>
+</puzzle>
+<puzzle width="4" height="5">
+<pento id="F2c"/>
+<pento id="Ta"/>
+<pento id="L1a"/>
+<pento id="Y1a"/>
+</puzzle>
+<puzzle width="4" height="5">
+<pento id="L1a"/>
+<pento id="P1b"/>
+<pento id="Wa"/>
+<pento id="Y2c"/>
+</puzzle>
+<puzzle width="4" height="5">
+<pento id="L1b"/>
+<pento id="P2b"/>
+<pento id="Wb"/>
+<pento id="Y1a"/>
+</puzzle>
+<puzzle width="4" height="5">
+<pento id="L1c"/>
+<pento id="P1d"/>
+<pento id="Y1d"/>
+<pento id="Z2b"/>
+</puzzle>
+<puzzle width="4" height="5">
+<pento id="L2c"/>
+<pento id="P2b"/>
+<pento id="Wb"/>
+<pento id="Y1a"/>
+</puzzle>
+<puzzle width="4" height="5">
+<pento id="L2d"/>
+<pento id="P2a"/>
+<pento id="Ta"/>
+<pento id="Va"/>
+</puzzle>
+<puzzle width="4" height="5">
+<pento id="L2d"/>
+<pento id="N2c"/>
+<pento id="P2a"/>
+<pento id="Ua"/>
+</puzzle>
+<puzzle width="5" height="4">
+<pento id="F2c"/>
+<pento id="L2d"/>
+<pento id="Ub"/>
+<pento id="Y2c"/>
+</puzzle>
+<puzzle width="5" height="4">
+<pento id="L1c"/>
+<pento id="P2c"/>
+<pento id="Wc"/>
+<pento id="Y1b"/>
+</puzzle>
+<puzzle width="5" height="4">
+<pento id="L2c"/>
+<pento id="N1c"/>
+<pento id="P1a"/>
+<pento id="Ua"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="F1b"/>
+<pento id="L2b"/>
+<pento id="P1a"/>
+<pento id="Vc"/>
+<pento id="Wb"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="F1c"/>
+<pento id="L1d"/>
+<pento id="Uc"/>
+<pento id="Y1c"/>
+<pento id="Z1a"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="L1a"/>
+<pento id="P2b"/>
+<pento id="Ta"/>
+<pento id="Ud"/>
+<pento id="Z2a"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="L1a"/>
+<pento id="P2a"/>
+<pento id="Wa"/>
+<pento id="Y1d"/>
+<pento id="Z1b"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="L1b"/>
+<pento id="N1d"/>
+<pento id="P1d"/>
+<pento id="Va"/>
+<pento id="Y1a"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="L1c"/>
+<pento id="N2b"/>
+<pento id="Ub"/>
+<pento id="Z1b"/>
+<pento id="Vd"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="L1d"/>
+<pento id="P2d"/>
+<pento id="Va"/>
+<pento id="Y1a"/>
+<pento id="Z1a"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="L2a"/>
+<pento id="N2a"/>
+<pento id="Ua"/>
+<pento id="Wc"/>
+<pento id="Y2b"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="L2d"/>
+<pento id="N1b"/>
+<pento id="P2c"/>
+<pento id="Ub"/>
+<pento id="Z2b"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="N1c"/>
+<pento id="P2d"/>
+<pento id="Vd"/>
+<pento id="Wd"/>
+<pento id="Y1c"/>
+</puzzle>
+<puzzle width="5" height="5">
+<pento id="P2d"/>
+<pento id="Va"/>
+<pento id="Wb"/>
+<pento id="Y1a"/>
+<pento id="Z2b"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F1a"/>
+<pento id="L2d"/>
+<pento id="P1c"/>
+<pento id="Vd"/>
+<pento id="Y2a"/>
+<pento id="Z2a"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F1a"/>
+<pento id="P2d"/>
+<pento id="Tc"/>
+<pento id="Vb"/>
+<pento id="Wa"/>
+<pento id="Y2c"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F1d"/>
+<pento id="Ib"/>
+<pento id="L2a"/>
+<pento id="Ua"/>
+<pento id="Vc"/>
+<pento id="X"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F1d"/>
+<pento id="Ib"/>
+<pento id="N1a"/>
+<pento id="P2b"/>
+<pento id="Vc"/>
+<pento id="Y2a"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F1d"/>
+<pento id="Ib"/>
+<pento id="N1a"/>
+<pento id="Tc"/>
+<pento id="Vc"/>
+<pento id="Y2a"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F1d"/>
+<pento id="L1a"/>
+<pento id="Ua"/>
+<pento id="Vd"/>
+<pento id="Y2b"/>
+<pento id="Z1b"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F1a"/>
+<pento id="L1d"/>
+<pento id="N2d"/>
+<pento id="P1c"/>
+<pento id="Ub"/>
+<pento id="Vb"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F2a"/>
+<pento id="L2d"/>
+<pento id="P2c"/>
+<pento id="Td"/>
+<pento id="Ud"/>
+<pento id="Y1b"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F2d"/>
+<pento id="Ib"/>
+<pento id="L1c"/>
+<pento id="P1d"/>
+<pento id="Uc"/>
+<pento id="Y1b"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F2d"/>
+<pento id="L2d"/>
+<pento id="N1c"/>
+<pento id="P2d"/>
+<pento id="Td"/>
+<pento id="Ud"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F2c"/>
+<pento id="N1a"/>
+<pento id="L1d"/>
+<pento id="Td"/>
+<pento id="Uc"/>
+<pento id="Z2a"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="F2b"/>
+<pento id="L2a"/>
+<pento id="P2c"/>
+<pento id="Ub"/>
+<pento id="Wb"/>
+<pento id="Y1d"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="Ib"/>
+<pento id="L1b"/>
+<pento id="N1c"/>
+<pento id="P2a"/>
+<pento id="Wc"/>
+<pento id="Y1b"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="Ib"/>
+<pento id="L1b"/>
+<pento id="N2a"/>
+<pento id="P2a"/>
+<pento id="Vc"/>
+<pento id="Y2d"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="Ib"/>
+<pento id="L2a"/>
+<pento id="N2d"/>
+<pento id="P1b"/>
+<pento id="Td"/>
+<pento id="Wa"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="Ib"/>
+<pento id="L2a"/>
+<pento id="P1b"/>
+<pento id="Ta"/>
+<pento id="Va"/>
+<pento id="Wb"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="Ib"/>
+<pento id="N2a"/>
+<pento id="P2d"/>
+<pento id="Ua"/>
+<pento id="Y1a"/>
+<pento id="Z1a"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="L1b"/>
+<pento id="N2b"/>
+<pento id="P2a"/>
+<pento id="Uc"/>
+<pento id="Vd"/>
+<pento id="Y2d"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="L1b"/>
+<pento id="P1c"/>
+<pento id="Va"/>
+<pento id="Wb"/>
+<pento id="Y1a"/>
+<pento id="Z1a"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="L2d"/>
+<pento id="N2c"/>
+<pento id="P1a"/>
+<pento id="Tc"/>
+<pento id="Wd"/>
+<pento id="Z2b"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="L2d"/>
+<pento id="P1b"/>
+<pento id="Td"/>
+<pento id="Ub"/>
+<pento id="Vc"/>
+<pento id="Y1b"/>
+</puzzle>
+<puzzle width="5" height="6">
+<pento id="N1a"/>
+<pento id="P1c"/>
+<pento id="Tc"/>
+<pento id="Vc"/>
+<pento id="Wc"/>
+<pento id="Y2a"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="F1c"/>
+<pento id="Ib"/>
+<pento id="L2a"/>
+<pento id="N2d"/>
+<pento id="Vc"/>
+<pento id="Wc"/>
+<pento id="Z2b"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="F1d"/>
+<pento id="L1b"/>
+<pento id="N2c"/>
+<pento id="P1c"/>
+<pento id="Tb"/>
+<pento id="Va"/>
+<pento id="Wb"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="F2a"/>
+<pento id="Ib"/>
+<pento id="L2a"/>
+<pento id="P1d"/>
+<pento id="Tb"/>
+<pento id="Ud"/>
+<pento id="Y2d"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="F2a"/>
+<pento id="Ib"/>
+<pento id="L2b"/>
+<pento id="P1d"/>
+<pento id="Va"/>
+<pento id="Ud"/>
+<pento id="Y1a"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="F2d"/>
+<pento id="Ib"/>
+<pento id="N1c"/>
+<pento id="P1a"/>
+<pento id="Uc"/>
+<pento id="Vd"/>
+<pento id="X"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="F2d"/>
+<pento id="Ib"/>
+<pento id="L1d"/>
+<pento id="Vb"/>
+<pento id="X"/>
+<pento id="Y2c"/>
+<pento id="Z2a"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="F2d"/>
+<pento id="P1a"/>
+<pento id="Tb"/>
+<pento id="Ud"/>
+<pento id="Vc"/>
+<pento id="Wb"/>
+<pento id="Y1b"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="Ib"/>
+<pento id="L1a"/>
+<pento id="N1c"/>
+<pento id="P1c"/>
+<pento id="Ta"/>
+<pento id="Va"/>
+<pento id="Y1c"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="Ib"/>
+<pento id="L1b"/>
+<pento id="N1a"/>
+<pento id="P1d"/>
+<pento id="Tc"/>
+<pento id="Vb"/>
+<pento id="Y2c"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="Ib"/>
+<pento id="L1b"/>
+<pento id="N1c"/>
+<pento id="P2b"/>
+<pento id="Ud"/>
+<pento id="Vd"/>
+<pento id="Y2a"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="Ib"/>
+<pento id="L2b"/>
+<pento id="N2c"/>
+<pento id="P1a"/>
+<pento id="Tb"/>
+<pento id="Vb"/>
+<pento id="Y1a"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="L1c"/>
+<pento id="N1d"/>
+<pento id="P2a"/>
+<pento id="Tc"/>
+<pento id="Ud"/>
+<pento id="Wc"/>
+<pento id="Y2a"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="L2a"/>
+<pento id="N1a"/>
+<pento id="P1c"/>
+<pento id="Vb"/>
+<pento id="Ua"/>
+<pento id="Z2a"/>
+<pento id="Y1d"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="L2b"/>
+<pento id="N2a"/>
+<pento id="P2a"/>
+<pento id="Td"/>
+<pento id="Vc"/>
+<pento id="Wa"/>
+<pento id="Z2b"/>
+</puzzle>
+<puzzle width="5" height="7">
+<pento id="L2c"/>
+<pento id="N1b"/>
+<pento id="P1b"/>
+<pento id="Ua"/>
+<pento id="Vc"/>
+<pento id="Z1a"/>
+<pento id="Y2c"/>
+</puzzle>
+</puzzles>
