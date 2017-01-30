@@ -60,9 +60,9 @@ public class Parser {
 				//SI c'est un pentomino valide => ajoute le dans un arraylist de pentomino
 				Node sousNoeud = pento.item(n);
 				//si sousNoeud a pour nom pento
-				if (sousNoeud.getNodeName().equals("pento"))
-					System.out.println("Pentomino " + sousNoeud.getNodeValue());//a travailler avec un getAttribute
-				//add un pentomino du bon nom dans l'arrayList
+				if ((sousNoeud.getNodeName()).equals("pento"))
+					System.out.println(sousNoeud.getAttributes().getNamedItem("id").getNodeValue());
+					//add un pentomino du bon nom dans l'arrayList
 					
 			}
 			//ajoute la paire dans l'arrayList
