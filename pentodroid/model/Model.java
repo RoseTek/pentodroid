@@ -2,13 +2,13 @@ package android.pentodroid.model;
 
 import java.util.ArrayList;
 
-//public class Model implements IModel {
 public class Model implements IModel{
 	private int width;
 	private int height;
 	private boolean grille[][];//case libre = true
     private ArrayList<Pair<Pentomino,ArrayList<Coordinate>>> pento;
     
+    //gestion taille invalide
 	public Model(int width, int height){
 		this.width = width;
 		this.height = height;
@@ -106,6 +106,7 @@ public class Model implements IModel{
 
     public Pentomino get(Coordinate pos) throws NotFound {
     	if (valid(pos) == false || (grille[pos.getLig()][pos.getCol()] == true))
+        //if (free(pos) == true)
     		throw new NotFound();
     	Pentomino id = Pentomino.Ia; //initialisation
     	for (Pair<Pentomino,ArrayList<Coordinate>> paire : pento)
@@ -122,28 +123,45 @@ public class Model implements IModel{
     }
     
 	public String toString(){
-		String str = "";
+		String str = " ";
 		for (int i=0 ; i<height ; i++)
-			str+=".";
+			str+="_";
 		str+="\n";
 		for (int i=0 ; i<height ; i++)
 		{
 			str += "|";
 			for (int n=0; n<width ; n++)
 				if (grille[i][n] == true)
-					str += " ";
+					str += ".";
 				else
 					str += "*";
 			str += "|\n";
 		}
+		str += "|";
 		for (int i=0 ; i<height ; i++)
-			str+=".";
+			str+="_";
+		str += "|";
 		return str;
 	}
 	
 	// ----------------------------------------- main de test
 	public static void main(String []av){
+		Parser parser = new Parser();
 		
+		ArrayList<Pair<Model,ArrayList<Pentomino>>> parties;
+		
+		parties = parser.generePartie("/users/nfs/Etu4/3602844/workspace/pentodroid/src/android/pentodroid/model/puzzles.xml");
+		if (parties == null)
+		{
+			System.out.println("ca marche pas");
+		}
+		else
+		{
+			System.out.println("voctroire");
+			Model m1 = parties.get(0).fst();
+			ArrayList<Pentomino> pieces1 = parties.get(0).snd();		
+			//tester si on a bien chargé le bon truc
+		}
 		// test fin de partie
 		/*
 		Model fin = new Model(5,3);
@@ -155,7 +173,7 @@ public class Model implements IModel{
 		System.out.println(fin.achieved());//true
 		*/
 		//-------------------- 
-	
+		/*
 		Model mod = new Model(10,10);
 		
 		System.out.println(mod.width());
@@ -188,5 +206,6 @@ public class Model implements IModel{
 		{
 			System.out.println("Exception not found catch");
 		}
+		*/
 	}
 }
