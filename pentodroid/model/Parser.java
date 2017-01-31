@@ -41,7 +41,7 @@ public class Parser {
 		//recuperer la liste de Node
 		NodeList listeNoeud = racine.getElementsByTagName("puzzle");
 		
-		ArrayList<Pair<Model,ArrayList<Pentomino>>> tab = null;
+		ArrayList<Pair<Model,ArrayList<Pentomino>>> tab = new ArrayList<Pair<Model,ArrayList<Pentomino>>>();
 		//pour chaque puzzle
 		for (int i = 0; i<listeNoeud.getLength() ; i++)
 		{
@@ -53,12 +53,12 @@ public class Parser {
 			int height = Integer.parseInt(attrs.getNamedItem("height").getNodeValue());
 			//genere Model
 			Model m = new Model(width, height);
-			System.out.println("width " + width + "height " + height);
+			//System.out.println("width " + width + "height " + height);
 			
 			//recupere la liste de nodes qui contient les pentominos
 			NodeList pento = noeud.getChildNodes();
 			//pour chaque node
-			ArrayList<Pentomino> pp = null;
+			ArrayList<Pentomino> pp = new ArrayList<Pentomino>();
 			for (int n = 0; n<pento.getLength() ; n++)
 			{
 				//SI c'est un pentomino valide => ajoute le dans un arraylist de pentomino
@@ -66,12 +66,13 @@ public class Parser {
 				//si sousNoeud a pour nom pento
 				if ((sousNoeud.getNodeName()).equals("pento"))
 				{
-					System.out.println(sousNoeud.getAttributes().getNamedItem("id").getNodeValue());
+					//System.out.println(sousNoeud.getAttributes().getNamedItem("id").getNodeValue());
 					//add un pentomino du bon nom dans l'arrayList pp
-				}					
+					pp.add(Pentomino.valueOf(sousNoeud.getAttributes().getNamedItem("id").getNodeValue()));
+				}
 			}
 			//ajoute la paire m, pp dans l'arrayList
-			Pair<Model,ArrayList<Pentomino>> paire = new Pair(m, pp);
+			Pair<Model,ArrayList<Pentomino>> paire = new Pair<Model,ArrayList<Pentomino>>(m, pp);
 	    	tab.add(paire);
 		}
 		return tab;

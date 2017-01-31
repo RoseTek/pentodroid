@@ -39,7 +39,7 @@ public class Model implements IModel{
     	return false;
     }
     
-    public boolean achieved(){ //arraylist
+    public boolean achieved(){ //autre methode avec le nb de pieces placees
 		for (int i=0 ; i<height ; i++)
 			for (int n=0; n<width ; n++)
 				if (grille[i][n] == true)
@@ -48,40 +48,37 @@ public class Model implements IModel{
     }
     
     public boolean canPut(Pentomino id, Coordinate pos){
-    	ArrayList<Coordinate> coord = id.shapeOf();
-    	
     	//trouver le décalage (x, y)
     	int lin,col;
-    	lin = pos.getLig() - (coord.get(0)).getLig();
-       	col = pos.getCol() - (coord.get(0)).getCol();
+    	lin = pos.getLig() - (id.shapeOf().get(0)).getLig();
+       	col = pos.getCol() - (id.shapeOf().get(0)).getCol();
 
     	//generer coord_grille avec le decalage a partir de coord
-    	for (Coordinate c : coord)
+    	for (Coordinate c : id.shapeOf())
     		if (free(new Coordinate(c.getLig() + lin, c.getCol() + col)) == false)
     			return false;
-    	return true;    	
+    	return true;
     }
     
     public void put(Pentomino id, Coordinate pos) //mettre toutes les cases occupées a false
     {
     	if (canPut(id, pos) == false)
     		return;
-    	
-    	ArrayList<Coordinate> coord = id.shapeOf();
+
     	ArrayList<Coordinate> coord_grille = new ArrayList<Coordinate>();
  
     	//trouver le décalage (x, y)
     	int lin,col;
-    	lin = pos.getLig() - (coord.get(0)).getLig();
-    	col = pos.getCol() - (coord.get(0)).getCol();
+    	lin = pos.getLig() - (id.shapeOf().get(0)).getLig();
+    	col = pos.getCol() - (id.shapeOf().get(0)).getCol();
 
     	//generer coord_grille avec le decalage a partir de coord
-    	for (Coordinate c : coord)
+    	for (Coordinate c : id.shapeOf())
     		coord_grille.add(new Coordinate(c.getLig() + lin, c.getCol() + col));
     	
     	for (Coordinate c : coord_grille)
        		grille[c.getLig()][c.getCol()] = false;
-    	Pair<Pentomino,ArrayList<Coordinate>> paire = new Pair(id, coord_grille);
+    	Pair<Pentomino,ArrayList<Coordinate>> paire = new Pair<Pentomino,ArrayList<Coordinate>>(id, coord_grille);
     	pento.add(paire);
     }
 
@@ -105,10 +102,9 @@ public class Model implements IModel{
     }
 
     public Pentomino get(Coordinate pos) throws NotFound {
-    	if (valid(pos) == false || (grille[pos.getLig()][pos.getCol()] == true))
-        //if (free(pos) == true)
+        if (free(pos) == true)
     		throw new NotFound();
-    	Pentomino id = Pentomino.Ia; //initialisation
+    	Pentomino id = Pentomino.Ia; //initialisation sinon compilo pas content
     	for (Pair<Pentomino,ArrayList<Coordinate>> paire : pento)
     	{
     		for(Coordinate coord : paire.snd())
@@ -146,6 +142,7 @@ public class Model implements IModel{
 	
 	// ----------------------------------------- main de test
 	public static void main(String []av){
+		// ----------------------- Test class Parser
 		Parser parser = new Parser();
 		
 		ArrayList<Pair<Model,ArrayList<Pentomino>>> parties;
@@ -153,34 +150,39 @@ public class Model implements IModel{
 		parties = parser.generePartie("/users/nfs/Etu4/3602844/workspace/pentodroid/src/android/pentodroid/model/puzzles.xml");
 		if (parties == null)
 		{
-			System.out.println("ca marche pas");
+			System.out.println("parsing failure");
 		}
 		else
 		{
-			System.out.println("voctroire");
-			Model m1 = parties.get(0).fst();
-			ArrayList<Pentomino> pieces1 = parties.get(0).snd();		
-			//tester si on a bien chargé le bon truc
+			System.out.println("parsing ok");
+			for (Pair<Model,ArrayList<Pentomino>> game : parties)
+			{
+				Model m1 = game.fst();
+				ArrayList<Pentomino> pieces1 = game.snd();
+				System.out.println("height : " + m1.height() + " width : " + m1.width());
+				for (Pentomino p : pieces1)
+					System.out.println("Piece : " + p.name());
+			}
 		}
-		// test fin de partie
-		/*
+		// ----------------------- test fin de partie
+
 		Model fin = new Model(5,3);
 				
-		System.out.println(fin.achieved());//false
+		System.out.println("Test pentodroid pas fini : " +fin.achieved());//false
 		fin.put(Pentomino.Ub, new Coordinate(0,0));
 		fin.put(Pentomino.P2b, new Coordinate(0,2));
 		fin.put(Pentomino.Vd, new Coordinate(0,4));
-		System.out.println(fin.achieved());//true
-		*/
-		//-------------------- 
-		/*
+		System.out.println("Test pentodroid fini : " + fin.achieved());//true
+
+		// ----------------------- Test methods
+		
 		Model mod = new Model(10,10);
 		
 		System.out.println(mod.width());
 		System.out.println(mod.height());
 		
 		System.out.println(mod.free(new Coordinate(0,1))); //true
-		System.out.println(mod.free(new Coordinate(0,6))); //false
+		System.out.println(mod.free(new Coordinate(0,6))); //true
 		System.out.println(mod.free(new Coordinate(-1,1))); //false
 		
 		System.out.println(mod);
@@ -199,13 +201,12 @@ public class Model implements IModel{
 		System.out.println(mod);
 		
 		try{
-			System.out.println(mod.get(new Coordinate(6,6))); //ok ok
+			System.out.println(mod.get(new Coordinate(6,6))); //Wd
 			System.out.println(mod.get(new Coordinate(0,0))); //throw exception
 		}
 		catch (NotFound e)
 		{
 			System.out.println("Exception not found catch");
 		}
-		*/
 	}
 }
